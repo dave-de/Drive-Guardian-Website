@@ -95,6 +95,7 @@ header.scrolled .nav-links a.lnk:hover{color:var(--primary)}
 @keyframes scrollx{to{transform:translateX(-50%)}}
 
 section.block{padding:104px 0;position:relative}
+section[id]{scroll-margin-top:84px}
 .bg-alt{background:var(--bg-alt)}
 .eyebrow{display:inline-block;color:var(--primary);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;background:#eef0ff;padding:6px 14px;border-radius:999px}
 .h2{font-size:44px;font-weight:800;letter-spacing:-1.3px;margin:16px 0 14px;line-height:1.08}
