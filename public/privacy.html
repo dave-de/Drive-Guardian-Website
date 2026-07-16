@@ -35,7 +35,7 @@
         DriveGuardian
       </a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: 30 June 2026</p>
+      <p>Last updated: 16 July 2026</p>
     </div>
   </header>
   <main class="wrap">
@@ -45,7 +45,9 @@
       <li><strong>Account information.</strong> Your name and email address when you create an account (including via Google sign-in), used to identify you and secure your data.</li>
       <li><strong>Location data.</strong> Your device's location and speed are used to detect when you are driving and to label activity with the speed at which it occurred.</li>
       <li><strong>Call and message events.</strong> The app detects when a call or text occurs while you are driving. We record only that an event happened, the time, and the speed. <strong>We never read, collect, or store the content of your calls or messages, nor your contacts or phone numbers.</strong></li>
+      <li><strong>Chat-app use while driving.</strong> With your permission (Usage access), the app notices when a messaging app (such as WhatsApp, Viber, Signal or Telegram) is opened while you are driving, so the optional texting-while-driving block can work. We record only the single event "app used while driving" — never what you type, read, or who you talk to. Messages that merely arrive are not recorded.</li>
       <li><strong>Motion data.</strong> Accelerometer readings are used on-device to tell whether you are stationary, walking, or driving.</li>
+      <li><strong>Self-reported seatbelt photos.</strong> Optional; visible only to you and your family group.</li>
       <li><strong>Device token.</strong> A push-notification token (Firebase Cloud Messaging) so we can send safety notifications.</li>
     </ul>
     <h2>How we use your information</h2>
@@ -57,14 +59,21 @@
     </ul>
     <h2>Accountability partners</h2>
     <p>If you add an accountability partner, we send that person summary information about your safe-driving activity to the email you provide. Partners do not receive your location, messages, or call details — only high-level safe-driving summaries. You can remove a partner at any time.</p>
+    <h2>Family monitoring</h2>
+    <p>If you join a family group (by accepting an invitation and signing in), the family owner can see your driving activity, safety alerts, and your live location on a map. This sharing is always with your knowledge: joining requires your own sign-in, and a persistent notification is shown on your device whenever monitoring is active. You can leave a family group, or turn monitoring off, at any time in the app.</p>
     <h2>How your information is stored and shared</h2>
-    <p>Your data is stored securely using Supabase (our backend provider) and is protected so that only you — and partners you explicitly add — can access your safe-driving summaries. <strong>We do not sell your personal data, and we do not show ads.</strong> We only share data with service providers that help operate the app, and where required by law.</p>
+    <p>Your data is stored securely using Supabase (our backend provider) and is protected so that only you — and the partners or family group you explicitly join — can access it. <strong>We do not sell your personal data.</strong> We only share data with service providers that help operate the app, and where required by law.</p>
+    <h2>Advertising</h2>
+    <p>The app shows banner advertising served by Google AdMob. AdMob may use device identifiers to serve and measure ads as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. We do not share your driving data, location history, or any monitoring data with advertisers.</p>
     <h2>Permissions we request</h2>
     <ul>
       <li><strong>Location (incl. background):</strong> to detect driving and record speed.</li>
       <li><strong>Call log &amp; phone state:</strong> to detect calls during a drive (event only, never content).</li>
       <li><strong>SMS:</strong> to detect texting during a drive (event only, never content).</li>
+      <li><strong>Usage access:</strong> to detect a chat app being opened while driving, for the optional texting-while-driving block (a single "app used" event; no other usage data leaves your device).</li>
+      <li><strong>Display over other apps &amp; Do Not Disturb:</strong> to show the optional driving-lock screen and silence alerts while you drive.</li>
       <li><strong>Physical activity:</strong> to refine motion detection.</li>
+      <li><strong>Camera:</strong> only when you take an optional seatbelt-check photo.</li>
       <li><strong>Notifications:</strong> to deliver safety alerts.</li>
     </ul>
     <p>You can revoke any permission at any time in your device settings; some safety features may stop working as a result.</p>
