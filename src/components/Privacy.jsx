@@ -9,7 +9,7 @@ const Check = () => (
 const POINTS = [
   'Only your own activity is tracked — on your device.',
   'Partners only see safe-driving summaries you choose to share.',
-  'Message and call content is never read or stored — only that an event happened.',
+  'You choose what you share — your data stays within your family group.',
   'No ads. No selling your data. Ever.',
 ]
 
