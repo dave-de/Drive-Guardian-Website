@@ -19,10 +19,12 @@
     header p { color:rgba(255,255,255,.85); margin-top:8px; }
     main { padding:54px 0 80px; }
     h2 { color:var(--ink); font-size:22px; font-weight:800; margin:34px 0 10px; }
+    h3 { color:var(--ink); font-size:16px; font-weight:700; margin:18px 0 8px; }
     p { margin-bottom:14px; }
     ul { margin:0 0 14px 22px; }
     li { margin-bottom:8px; }
     strong { color:var(--ink); }
+    .note { background:#f5f6fb; border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:16px 0 8px; }
     .back { display:inline-block; margin-top:30px; font-weight:700; }
     footer { border-top:1px solid var(--border); padding:30px 0; color:var(--muted); font-size:14px; }
   </style>
@@ -35,55 +37,78 @@
         DriveGuardian
       </a>
       <h1>Privacy Policy</h1>
-      <p>Last updated: 16 July 2026</p>
+      <p>Last updated: 14 November 2026</p>
     </div>
   </header>
   <main class="wrap">
-    <p>DriveGuardian ("we", "our", or "the app") helps drivers stay focused on the road and stay accountable. This Privacy Policy explains what information the app collects, why we collect it, and the choices you have. By using DriveGuardian you agree to this policy.</p>
+    <p>DriveGuardian ("we", "our", or "the app") helps drivers stay focused on the road and stay accountable. This Privacy Policy explains what information the app collects, why we collect it, and the choices you have. It applies to the DriveGuardian apps on both iOS (iPhone/iPad) and Android. By using DriveGuardian you agree to this policy.</p>
+
     <h2>Information we collect</h2>
     <ul>
-      <li><strong>Account information.</strong> Your name and email address when you create an account (including via Google sign-in), used to identify you and secure your data.</li>
-      <li><strong>Location data.</strong> Your device's location and speed are used to detect when you are driving and to label activity with the speed at which it occurred.</li>
-      <li><strong>Chat-app use while driving.</strong> With your permission (Usage access), the app notices when a messaging app (such as WhatsApp, Viber, Signal or Telegram) is opened while you are driving, so the optional texting-while-driving block can work. We record only the single event "app used while driving" — never what you type, read, or who you talk to. Messages that merely arrive are not recorded.</li>
-      <li><strong>Motion data.</strong> Accelerometer readings are used on-device to tell whether you are stationary, walking, or driving.</li>
+      <li><strong>Account information.</strong> Your name and email address when you create an account (including via Sign in with Apple, Google, or Facebook), used to identify you and secure your data. If you use Sign in with Apple and choose to hide your email, we only receive Apple's private relay address.</li>
+      <li><strong>Location data.</strong> Your device's location and speed are used to detect when you are driving, label activity with the speed at which it occurred, and — if you join a family group — share your live location with that group. With your permission, location can be used in the background so trips are detected and shared even while the app is closed.</li>
+      <li><strong>Motion data.</strong> Accelerometer and motion readings are used on-device to tell whether you are stationary, walking, or driving, and to detect when the phone is picked up and handled while driving.</li>
+      <li><strong>Phone use while driving.</strong> The app records only that "the phone was used while driving," with the time and speed. On iPhone and iPad this is detected only from the phone being physically handled and from you switching away from DriveGuardian to another app. <strong>We never read, collect, or store the content of your calls, messages, or notifications, which app you opened, your contacts, or your phone numbers.</strong></li>
       <li><strong>Self-reported seatbelt photos.</strong> Optional; visible only to you and your family group.</li>
       <li><strong>Device token.</strong> A push-notification token (Firebase Cloud Messaging) so we can send safety notifications.</li>
     </ul>
+    <div class="note"><strong>Android only.</strong> On Android, with your permission (Usage access), the app can also notice when a messaging app (such as WhatsApp, Viber, Signal or Telegram) is opened while you are driving, so the optional texting-while-driving block can work. Even then we record only the single event "app used while driving" — never what you type, read, or who you talk to. This feature is not available on iPhone or iPad.</div>
+
     <h2>How we use your information</h2>
     <ul>
-      <li>To detect distracted-driving moments and calculate your safety score.</li>
-      <li>To show you activity breakdowns and weekly reports.</li>
+      <li>To detect distracted-driving moments and calculate your safe-driving score.</li>
+      <li>To show you activity breakdowns, trip history, and weekly reports.</li>
       <li>To send accountability summaries to partners you choose to add.</li>
+      <li>To share your live location and safety alerts with a family group you choose to join.</li>
       <li>To send you safety-related notifications.</li>
     </ul>
+
     <h2>Accountability partners</h2>
     <p>If you add an accountability partner, we send that person summary information about your safe-driving activity to the email you provide. Partners do not receive your location, messages, or call details — only high-level safe-driving summaries. You can remove a partner at any time.</p>
+
     <h2>Family monitoring</h2>
-    <p>If you join a family group (by accepting an invitation and signing in), the family owner can see your driving activity, safety alerts, and your live location on a map. This sharing is always with your knowledge: joining requires your own sign-in, and a persistent notification is shown on your device whenever monitoring is active. You can leave a family group, or turn monitoring off, at any time in the app.</p>
+    <p>If you join a family group (by accepting an invitation and signing in), the family owner can see your driving activity, safety alerts, and your live location on a map. This sharing is always with your knowledge: joining requires your own sign-in. You can leave a family group, or turn monitoring off, at any time in the app.</p>
+
     <h2>How your information is stored and shared</h2>
     <p>Your data is stored securely using Supabase (our backend provider) and is protected so that only you — and the partners or family group you explicitly join — can access it. <strong>We do not sell your personal data.</strong> We only share data with service providers that help operate the app, and where required by law.</p>
+
     <h2>Advertising</h2>
-    <p>The app shows banner advertising served by Google AdMob. AdMob may use device identifiers to serve and measure ads as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. We do not share your driving data, location history, or any monitoring data with advertisers.</p>
+    <p>The app may show banner advertising served by Google AdMob. On iPhone and iPad, ads are served on a <strong>non-personalized</strong> basis — we do not ask to track you, and we do not use the device's advertising identifier (IDFA) to profile you across other companies' apps or websites. We do not share your driving data, location history, or any monitoring data with advertisers. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+    <h2>Tracking</h2>
+    <p>DriveGuardian does <strong>not</strong> track you across apps and websites owned by other companies, and does not request App Tracking Transparency permission. Your driving, location, and monitoring data are used only to provide the features described above.</p>
+
     <h2>Permissions we request</h2>
+    <h3>iPhone, iPad and Android</h3>
     <ul>
-      <li><strong>Location (incl. background):</strong> to detect driving and record speed.</li>
-      <li><strong>Usage access:</strong> to detect a chat app being opened while driving, for the optional texting-while-driving block (a single "app used" event; no other usage data leaves your device).</li>
-      <li><strong>Display over other apps &amp; Do Not Disturb:</strong> to show the optional driving-lock screen and silence alerts while you drive.</li>
-      <li><strong>Physical activity:</strong> to refine motion detection.</li>
+      <li><strong>Location (incl. background):</strong> to detect driving, record speed, and share your live location with a family group you join.</li>
+      <li><strong>Motion &amp; physical activity:</strong> to tell driving apart from walking and refine motion detection.</li>
       <li><strong>Camera:</strong> only when you take an optional seatbelt-check photo.</li>
+      <li><strong>Photo library:</strong> only when you attach a photo for an optional seatbelt check.</li>
       <li><strong>Notifications:</strong> to deliver safety alerts.</li>
     </ul>
-    <p>You can revoke any permission at any time in your device settings; some safety features may stop working as a result.</p>
-    <h2>Data retention</h2>
-    <p>We keep your activity data for as long as your account is active so we can show your history and trends. You can request deletion of your account and associated data at any time by contacting us.</p>
+    <h3>Android only</h3>
+    <ul>
+      <li><strong>Usage access:</strong> to detect a chat app being opened while driving, for the optional texting-while-driving block (a single "app used" event; no other usage data leaves your device).</li>
+      <li><strong>Display over other apps &amp; Do Not Disturb:</strong> to show the optional driving-lock screen and silence alerts while you drive.</li>
+    </ul>
+    <p>These Android-only permissions are never requested on iPhone or iPad, and the related features are not shown there. You can revoke any permission at any time in your device settings; some safety features may stop working as a result.</p>
+
+    <h2>Data retention and deletion</h2>
+    <p>We keep your activity data for as long as your account is active so we can show your history and trends. You can <strong>delete your account and all associated data directly in the app</strong> — go to <strong>Profile &rarr; Delete account</strong>. You may also request deletion by contacting us at the email below.</p>
+
     <h2>Your rights</h2>
     <p>You may access, correct, or delete your personal data. To make a request, contact us at the email below.</p>
-    <h2>Children's privacy</h2>
-    <p>DriveGuardian is intended for licensed drivers and is not directed at children under 13.</p>
+
+    <h2>Eligibility &amp; children's privacy</h2>
+    <p>DriveGuardian is available to users aged 13 and over. A child under 13 may use DriveGuardian only with the verifiable consent of, and under the supervision of, a parent or legal guardian. For any user under the age of 18, a parent or legal guardian must review and accept these terms and this Privacy Policy on the minor's behalf. We do not knowingly collect personal information from a child under 13 without parental consent; if you believe this has happened, please contact us and we will delete it.</p>
+
     <h2>Changes to this policy</h2>
     <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+
     <h2>Contact us</h2>
-    <p>If you have questions about this Privacy Policy or your data, or to request deletion of your account, contact us at <a href="mailto:driveapptest26@gmail.com">driveapptest26@gmail.com</a>.</p>
+    <p>If you have questions about this Privacy Policy or your data, or to request deletion of your account, contact us at <a href="mailto:getdriveguardian@gmail.com">getdriveguardian@gmail.com</a>.</p>
+
     <a class="back" href="/">← Back to DriveGuardian</a>
   </main>
   <footer><div class="wrap">© 2026 DriveGuardian. All rights reserved.</div></footer>
